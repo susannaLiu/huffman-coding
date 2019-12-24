@@ -12,8 +12,8 @@ public class HuffmanCode {
 
    // Initializes a new HuffmanCode object tree which is used to compress data.
    //
-   // Parameter: Takes the frequency of each letter or character that appears in the
-   // data file that needs to compressed or decompressed.
+   // Parameter: Takes an array of frequencies where frequencies[i] represents the count of
+   // the character with ASCII value i.
    public HuffmanCode(int[] frequencies) {
       Queue<HuffmanNode> queue = new PriorityQueue<>();
       for (int i = 0; i < frequencies.length; i++) {
